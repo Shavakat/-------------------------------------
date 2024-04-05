@@ -1,0 +1,97 @@
+header {
+    background: #2B2A2B;
+    height: 87px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+    padding: 0 7.7%;
+}
+
+.header_nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 7vw;
+}
+
+.header_nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Lato;
+}
+
+.bntcall button {
+    padding: 14px 38px;
+    border: solid 1.5px #ffffff;
+    border-radius: 10px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* При разрешении экрана шириной менее 480px */
+@media only screen and (max-width: 480px) {
+
+    .header_nav ul {
+        display: none;
+
+    }
+
+    .bntcall button {
+        padding: 10px 20px;
+        border: solid 1px #ffffff;
+        font-size: 12px;
+    }
+
+}
+/* При разрешении экрана шириной менее 768px */
+@media only screen and (max-width: 767px) {
+
+    .header_nav ul {
+        display: none;
+
+    }
+
+    .bntcall button {
+       display: none;
+    }
+
+}
+
+/* При разрешении экрана шириной от 768px до 980px */
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .header_nav ul {
+
+        gap: 2vw;
+        
+    }
+
+    .header_nav a {
+        font-size: 12px;
+    }
+    .bntcall button {
+        padding: 10px 22px;
+        border: solid 1px #ffffff;
+        font-size: 12px;
+    }
+}
+
+/* При разрешении экрана шириной от 980px до 1200px */
+@media only screen and (min-width: 980px) and (max-width: 1200px) {
+
+    .header_nav ul {
+
+        gap: 4vw;
+    }
+
+    .header_nav a {
+        font-size: 16px;
+    }
+    .bntcall button {
+        padding: 12px 26px;
+        border: solid 1px #ffffff;
+        font-size: 16px;
+    }
+}
