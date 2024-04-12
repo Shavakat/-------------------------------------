@@ -1,12 +1,15 @@
-
 import './App.css'
-import Header from './headerElements/Header'
+import Welcome from './Page1/blockWelcome/Welcome'
+import Farm from './Page1/farm/Farm'
+import InfoStudio from './Page1/infostudio/InfoStudio'
 
 function App() {
  
   return (
     <>
-      <Header />
+      <Welcome />
+      <Farm />
+      <InfoStudio />
     </>
   )
 }

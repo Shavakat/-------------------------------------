@@ -2,8 +2,8 @@
 @media only screen and (max-width: 480px) {
 
 }
-/* При разрешении экрана шириной менее 768px */
-@media only screen and (max-width: 767px) {
+/* При разрешении экрана шириной от 480px до 768px */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
 
 }
 
@@ -12,7 +12,7 @@
 
 }
 
-/* При разрешении экрана шириной от 768px до 1200px */
+/* При разрешении экрана шириной от 980px до 1200px */
 @media only screen and (min-width: 980px) and (max-width: 1200px) {
 
 }
