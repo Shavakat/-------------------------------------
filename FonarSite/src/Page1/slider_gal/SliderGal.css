@@ -4,7 +4,8 @@
     flex-direction: row;
     gap: 10px;
     overflow-x: scroll;
-    img{
-        cursor: grab;
-    }
+}
+
+.sliderGal-wrapper::-webkit-scrollbar {
+    display: none;
 }
