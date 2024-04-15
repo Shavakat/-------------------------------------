@@ -8,6 +8,7 @@ import {
 import './index.css'
 import ErrorPage from './error-page.jsx';
 import Services from './Page2/Services.jsx';
+import Galery from './Page3/Galery.jsx';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/services",
     element: <Services />,
+  },
+  {
+    path: "/galery",
+    element: <Galery />,
   },
 
 ]);
