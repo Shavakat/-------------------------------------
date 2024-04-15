@@ -10,7 +10,6 @@ const SliderGal = () => {
 
   return (
     <div
-      className="sliderGal"
       onWheel={(e) => {
         e.preventDefault();
         sliderGalRef.current.scrollLeft += e.deltaY;
@@ -44,7 +43,6 @@ const SliderGal = () => {
         <div className="sliderGal-item">
           <img src="https://via.placeholder.com/300" alt="Slide 3" />
         </div>
-        {/* Добавьте остальные слайды */}
       </div>
     </div>
   );
