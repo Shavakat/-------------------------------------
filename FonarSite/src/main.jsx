@@ -9,6 +9,7 @@ import './index.css'
 import ErrorPage from './error-page.jsx';
 import Services from './Page2/Services.jsx';
 import Galery from './Page3/Galery.jsx';
+import PostIvent from './Page4/PostIvent.jsx';
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,10 @@ const router = createBrowserRouter([
     path: "/galery",
     element: <Galery />,
   },
-
+  {
+    path: "/post",
+    element: <PostIvent />,
+  },
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

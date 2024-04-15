@@ -12,7 +12,7 @@ const Header = () => {
                         <li><Link to={"/"}><a>Главная</a></Link></li>
                         <li><Link to={"/services"}><a>Услуги</a></Link></li>
                         <li><Link to={"/galery"}><a>Галерея</a></Link></li>
-                        <li><Link to={"/"}><a>Мероприятия</a></Link></li>
+                        <li><Link to={"/post"}><a>Мероприятия</a></Link></li>
                     </ul>
                 </nav>
                 <div className="bntcall"><button type="button">Заказать звонок</button></div>
@@ -24,10 +24,10 @@ const Header = () => {
                     </label>
 
                     <ul class="menu__box">
-                        <li><a class="menu__item" href="#">Главная</a></li>
-                        <li><a class="menu__item" href="#">Услуги</a></li>
-                        <li><a class="menu__item" href="#">Галерея</a></li>
-                        <li><a class="menu__item" href="#">Мероприятия</a></li>
+                        <li><Link to={"/"}><a class="menu__item">Главная</a></Link></li>
+                        <li><Link to={"/services"}><a class="menu__item">Услуги</a></Link></li>
+                        <li><Link to={"/galery"}><a class="menu__item">Галерея</a></Link></li>
+                        <li><Link to={"/post"}><a class="menu__item">Мероприятия</a></Link></li>
                     </ul>
                 </div>
             </header>

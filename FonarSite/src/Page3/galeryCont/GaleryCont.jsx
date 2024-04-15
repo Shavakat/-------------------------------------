@@ -1,15 +1,6 @@
-import React from 'react'
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+
 import "./GaleryCont.css"
 
-const images = [
-    "./src/assets/picture/galtest/gal (1).png",
-    "./src/assets/picture/galtest/gal (2).png",
-    "./src/assets/picture/galtest/gal (3).png",
-    "./src/assets/picture/galtest/gal (4).png",
-    "./src/assets/picture/galtest/gal (5).png",
-
-]
 
 const GaleryCont = () => {
 
@@ -17,20 +8,18 @@ const GaleryCont = () => {
         <div className='gal_cont'>
             <p className="title_txt center_txt">Галерея</p>
             <div className="gal_item">
-                <ResponsiveMasonry
-                    columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
-                >
-                    <Masonry gutter='2%'>
-                        {images.map((image, i) => (
-                            <img
-                                key={i}
-                                src={image}
-                                style={{ width: "100%", display: "block" }}
-                                alt=""
-                            />
-                        ))}
-                    </Masonry>
-                </ResponsiveMasonry>
+                <img src="https://sun9-15.userapi.com/impg/FarLDEDkacYCDpjq8GgVPbmtaSeJHFy12OJ85A/FN_Zh0776yg.jpg?size=855x1280&quality=95&sign=0d3cfb86a2dbc96ab7b0ec6a07b15754&type=album" alt="" />
+                <img src="https://sun51-2.userapi.com/impg/EIoCjxLhXQI3D417votI5NviaNvZbwQtjC9kwQ/yjfP3YygHho.jpg?size=1170x781&quality=95&sign=1f5df9f9507f116c067bbdc9ce16b10d&type=album" alt="" />
+                <img src="https://sun9-15.userapi.com/impg/FarLDEDkacYCDpjq8GgVPbmtaSeJHFy12OJ85A/FN_Zh0776yg.jpg?size=855x1280&quality=95&sign=0d3cfb86a2dbc96ab7b0ec6a07b15754&type=album" alt="" />
+                <img src="https://sun51-2.userapi.com/impg/EIoCjxLhXQI3D417votI5NviaNvZbwQtjC9kwQ/yjfP3YygHho.jpg?size=1170x781&quality=95&sign=1f5df9f9507f116c067bbdc9ce16b10d&type=album" alt="" />
+                <img src="https://sun51-2.userapi.com/impg/EIoCjxLhXQI3D417votI5NviaNvZbwQtjC9kwQ/yjfP3YygHho.jpg?size=1170x781&quality=95&sign=1f5df9f9507f116c067bbdc9ce16b10d&type=album" alt="" />
+                <img src="https://sun51-2.userapi.com/impg/EIoCjxLhXQI3D417votI5NviaNvZbwQtjC9kwQ/yjfP3YygHho.jpg?size=1170x781&quality=95&sign=1f5df9f9507f116c067bbdc9ce16b10d&type=album" alt="" />
+                <img src="https://sun51-2.userapi.com/impg/EIoCjxLhXQI3D417votI5NviaNvZbwQtjC9kwQ/yjfP3YygHho.jpg?size=1170x781&quality=95&sign=1f5df9f9507f116c067bbdc9ce16b10d&type=album" alt="" />
+                <img src="https://sun9-15.userapi.com/impg/FarLDEDkacYCDpjq8GgVPbmtaSeJHFy12OJ85A/FN_Zh0776yg.jpg?size=855x1280&quality=95&sign=0d3cfb86a2dbc96ab7b0ec6a07b15754&type=album" alt="" />
+                <img src="https://sun9-15.userapi.com/impg/FarLDEDkacYCDpjq8GgVPbmtaSeJHFy12OJ85A/FN_Zh0776yg.jpg?size=855x1280&quality=95&sign=0d3cfb86a2dbc96ab7b0ec6a07b15754&type=album" alt="" />
+                <img src="https://sun9-15.userapi.com/impg/FarLDEDkacYCDpjq8GgVPbmtaSeJHFy12OJ85A/FN_Zh0776yg.jpg?size=855x1280&quality=95&sign=0d3cfb86a2dbc96ab7b0ec6a07b15754&type=album" alt="" />
+                <img src="https://sun9-15.userapi.com/impg/FarLDEDkacYCDpjq8GgVPbmtaSeJHFy12OJ85A/FN_Zh0776yg.jpg?size=855x1280&quality=95&sign=0d3cfb86a2dbc96ab7b0ec6a07b15754&type=album" alt="" />
+                <img src="https://sun51-2.userapi.com/impg/EIoCjxLhXQI3D417votI5NviaNvZbwQtjC9kwQ/yjfP3YygHho.jpg?size=1170x781&quality=95&sign=1f5df9f9507f116c067bbdc9ce16b10d&type=album" alt="" />
             </div>
         </div>
     )
