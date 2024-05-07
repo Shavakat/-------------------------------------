@@ -9,3 +9,9 @@
 .sliderGal-wrapper::-webkit-scrollbar {
     display: none;
 }
+
+.sliderGal-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
