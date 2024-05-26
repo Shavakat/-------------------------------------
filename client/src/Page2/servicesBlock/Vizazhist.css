@@ -55,10 +55,15 @@
     display: none;
 }
 .card_viz {
-    width: 444px;
     height: 444px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.card_viz_title {
+    width: 444px;
 }

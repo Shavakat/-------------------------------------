@@ -1,9 +1,11 @@
 const Router = require('express')
 const router = new Router()
+const eventController = require('../controllers/eventController')
 
-router.post('/',)
-router.get('/',)
-router.delete('/',)
+
+router.post('/', eventController.create)
+router.get('/', eventController.getAll)
+router.delete('/',eventController.delete)
 
 
 
