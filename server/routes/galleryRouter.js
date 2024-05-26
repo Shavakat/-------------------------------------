@@ -1,10 +1,11 @@
 const Router = require('express')
 const router = new Router()
 const galleryController = require('../controllers/galleryController')
+const checkRole = require('../middleware/checkRoleMiddleware')
 
-router.post('/', galleryController.create)
+router.post('/', checkRole('ADMIN'), galleryController.create)
 router.get('/', galleryController.getAll)
-router.delete('/', galleryController.delete)
+router.delete('/', checkRole('ADMIN'), galleryController.delete)
 
 
 

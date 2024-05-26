@@ -21,7 +21,11 @@ class EventController {
     }
 
     async getAll(req, res) {
-        const events = await Event.findAll()
+        let {limit, page} = req.query
+        page = page || 1
+        limit = limit || 9
+        let offset = page * limit - limit
+        const events = await Event.findAndCountAll({limit, offset})
         return res.json(events)
     }
 

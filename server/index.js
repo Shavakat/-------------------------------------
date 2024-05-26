@@ -32,7 +32,20 @@ const start = async () => {
     } catch (e) {
         console.log(e)
     }
-}
 
+  
+    //   await models.Role.create({role: ('USER')})
+    //   await models.Role.create({role: ('ADMIN')})
+    //   await models.Status.create({status: ('В обработке')})
+    //   await models.Status.create({status: ('Принят')})
+    //   await models.Status.create({status: ('Отклонен')})
+   
+    }
+
+
+
+
+
+    
 
 start()

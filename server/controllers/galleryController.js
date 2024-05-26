@@ -20,7 +20,11 @@ class GalleryController {
     }
 
     async getAll(req, res) {
-        const galleries = await Gallery.findAll()
+        let {limit, page} = req.query
+        page = page || 1
+        limit = limit || 9
+        let offset = page * limit - limit
+        const galleries = await Gallery.findAndCountAll({limit, offset})
         return res.json(galleries)
     }
 
