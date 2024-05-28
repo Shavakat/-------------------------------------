@@ -1,37 +1,14 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import './index.css'
-import ErrorPage from './error-page.jsx';
-import Services from './Page2/Services.jsx';
-import Galery from './Page3/Galery.jsx';
-import PostIvent from './Page4/PostIvent.jsx';
+import { BrowserRouter } from 'react-router-dom'
+import AppRouter from './AppRouter'
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/services",
-    element: <Services />,
-  },
-  {
-    path: "/galery",
-    element: <Galery />,
-  },
-  {
-    path: "/post",
-    element: <PostIvent />,
-  },
-]);
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+
+const main = () => {
+  return (
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
+  )
+}
+
+export default main

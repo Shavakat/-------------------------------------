@@ -1,11 +1,12 @@
 const Router = require('express')
 const router = new Router()
 const eventController = require('../controllers/eventController')
+const checkRole = require('../middleware/checkRoleMiddleware')
 
 
-router.post('/', eventController.create)
+router.post('/', checkRole('ADMIN'), eventController.create)
 router.get('/', eventController.getAll)
-router.delete('/',eventController.delete)
+router.delete('/', checkRole('ADMIN'), eventController.delete)
 
 
 
